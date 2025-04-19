@@ -28,7 +28,7 @@ class KnightsPath
     }
 
     static void Main() {
-        string inputPath = "C:\\Users\\ASUS\\Desktop\\plitka\\C#\\ConsoleApp-test\\inputData.txt";
+        string inputPath = "inputData.txt";
         string[] inputLines = File.ReadAllLines(inputPath);
         string[] dimensions = inputLines[0].Split(' ');
 
@@ -37,7 +37,7 @@ class KnightsPath
 
         int result = KnightUniquePaths(m, n);
 
-        string outputPath = "C:\\Users\\ASUS\\Desktop\\plitka\\C#\\ConsoleApp-test\\outputData.txt";
+        string outputPath = "outputData.txt";
         File.WriteAllText(outputPath, result.ToString());
 
         Console.WriteLine($"Результат: {result}");
